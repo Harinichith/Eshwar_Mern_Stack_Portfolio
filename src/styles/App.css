@@ -1,0 +1,23 @@
+/* src/styles/App.css */
+html {
+    scroll-behavior: smooth;
+  }
+  /* src/styles/App.css */
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+    transition: opacity 0.3s ease;
+  }
+  
+  #backToTop:hover {
+    background-color: #0056b3;
+  }

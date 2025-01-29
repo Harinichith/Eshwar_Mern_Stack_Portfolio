@@ -1,0 +1,33 @@
+/* src/styles/Footer.css */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  footer .social-icons a {
+    color: white;
+    font-size: 2rem;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+  }
+  
+  footer .social-icons a:hover {
+    color: #007bff;
+  }
+  /* Interactive hover effect for social media links */
+.social-icons a {
+  color: white;
+  font-size: 2rem;
+  margin: 0 15px;
+  padding: 10px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  background-color: #007bff;
+  transform: scale(1.2);
+  color: white;
+}

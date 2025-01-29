@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Interactive Portfolio Website",
+    "description": "A responsive portfolio built with React, AOS, and Bootstrap.",
+    "technologies": ["React", "Bootstrap", "AOS"],
+    "link": "https://github.com/yourusername/portfolio-website"
+  },
+  {
+    "id": 2,
+    "name": "Task Management System",
+    "description": "A Java-based system for managing tasks with MySQL database integration.",
+    "technologies": ["Java", "MySQL", "JDBC"],
+    "link": "https://github.com/yourusername/task-manager"
+  },
+  {
+    "id": 3,
+    "name": "Event Scheduler",
+    "description": "A Python Flask web application for scheduling and managing events.",
+    "technologies": ["Python", "Flask", "SQLite"],
+    "link": "https://github.com/yourusername/event-scheduler"
+  }
+]

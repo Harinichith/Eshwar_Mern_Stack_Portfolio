@@ -1,0 +1,126 @@
+.education {
+  background: linear-gradient(-45deg, #000, #222, #000);
+  background-size: 400% 400%;
+  animation: background-shift 8s infinite ease-in-out;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  padding: 20px;
+  opacity: 0; /* Initially hidden for fade-in effect */
+  animation: fadeIn 2s forwards; /* Fade-in effect for entire container */
+}
+
+/* Fade-in animation for the whole page */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.education-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.education-image {
+  width: 200px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Title Styling */
+.education h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #ff9900; /* Dark Orange */
+  animation: slideIn 1s ease-out; /* Slide-in effect for heading */
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.education-container {
+  width: 80%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Slide-up effect for each education item */
+.education-item {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+  width: 60%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out;
+  opacity: 0; /* Initially hidden */
+  animation: slideUp 1s ease-out forwards; /* Slide-up effect on item */
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.education-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.education-item h3 {
+  font-size: 1.5rem;
+  color: #ff9900;
+}
+
+.education-item p {
+  font-size: 1rem;
+  color: white;
+}
+
+.education-duration {
+  font-weight: bold;
+  color: #28a745;
+}
+
+/* Keyframes for Background Animation */
+@keyframes background-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

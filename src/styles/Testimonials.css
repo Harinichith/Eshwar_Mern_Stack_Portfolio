@@ -1,0 +1,39 @@
+/* Testimonials.css */
+
+/* Background Animation */
+.testimonials {
+  background: linear-gradient(-45deg, #007bff, #6c757d, #28a745);
+  background-size: 400% 400%;
+  animation: background-shift 6s infinite ease-in-out;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+.testimonials h2 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.testimonials p {
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+}
+
+/* Keyframes for Background Animation */
+@keyframes background-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

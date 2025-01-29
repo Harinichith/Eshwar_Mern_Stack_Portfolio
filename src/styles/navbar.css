@@ -1,0 +1,85 @@
+/* Position navbar at the top right */
+.navbar {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar .menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar .menu li {
+  margin: 0 20px;
+  font-size: 1.2rem;
+}
+
+.navbar .menu li a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Add a transition for cursor change */
+.navbar .menu li a:hover {
+  color: #ff9900; /* Highlight color */
+  transform: translateX(5px); /* Move the link slightly on hover */
+  cursor: pointer; /* Change cursor on hover */
+  transition: all 0.3s ease; /* Smooth transition for cursor */
+}
+
+/* Custom cursor style using animation */
+.navbar .menu li a {
+  position: relative;
+}
+
+.navbar .menu li a::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: #ff9900;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.navbar .menu li a:hover::after {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(2); /* Make the cursor effect grow */
+}
+
+/* Responsive layout for mobile */
+@media (max-width: 768px) {
+  .navbar .menu {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .navbar .menu.active {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}
